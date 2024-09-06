@@ -5,7 +5,7 @@ const { blogs, sequelize, users } = require('./model/index')
 // const multer = require('./middleware/multerConfig').multer
 // const storage = require('./middleware/multerConfig').storage
 
-const bcrypt = require("bcrypt")
+const bcrypt = require("bcryptjs")
 const { homePage, singleBlog, deleteBlog, createForm, createBlog } = require('./controller/blogController')
 const { registerUser, loginUser, renderRegister, renderLogin } = require('./controller/authController')
 
